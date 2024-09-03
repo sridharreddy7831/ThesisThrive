@@ -1,9 +1,19 @@
 <?php
 
-$db_name = 'mysql:host=localhost;dbname=shop_db';
-$user_name = 'root';
-$user_password = '';
+$host = 'sql313.infinityfree.com';
+$db = 'if0_37195179_shop_db';
+$user = 'if0_37195179';
+$pass = 'pxtLiIEFZVv';
 
-$conn = new PDO($db_name, $user_name, $user_password);
+$dsn = "mysql:host=$host;dbname=$db";
+
+try {
+    $conn = new PDO($dsn, $user, $pass);
+    // Set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+    // Display the error message
+    die("Connection failed: " . $e->getMessage());
+}
 
 ?>
