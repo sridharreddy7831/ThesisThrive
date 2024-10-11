@@ -1,9 +1,9 @@
 <?php
 
-$host = 'sql313.infinityfree.com';
-$db = 'if0_37195179_shop_db';
-$user = 'if0_37195179';
-$pass = 'pxtLiIEFZVv';
+$host = 'sql12.freesqldatabase.com';
+$db = 'sql12737076';
+$user = 'sql12737076';
+$pass = '1vd67cPHYu';
 
 $dsn = "mysql:host=$host;dbname=$db";
 
